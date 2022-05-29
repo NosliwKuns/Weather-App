@@ -7,11 +7,11 @@ export default function App() {
 
   const [cities, setCities] = useState([]);
 
-  const apiKey = import.meta.env.VITE_APP_API_KEY
+  const { VITE_API_KEY } = import.meta.env
 
   function onSearch(ciudad) {
 
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${VITE_API_KEY}&units=metric`)
         .then(response => response.json())
         .then(info => {
           if(info.main !== undefined){
