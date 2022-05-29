@@ -1,0 +1,112 @@
+#logoHenry {
+  margin-right: 20px;
+  height: 50px;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  font-weight: bold;
+  color: rgb(17, 17, 18);
+  z-index: 2;
+}
+
+.header-bg {
+  background-color: #000B2D;
+  color: #fff;
+}
+
+.center-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1680px;
+  margin:auto;
+  padding: 10px 0;
+}
+
+.title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 30.5px;
+}
+
+.title h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.title span {
+  color: #3085A9;
+}
+
+.container-searchBar {
+  display: flex;
+  margin-right: 30.5px;
+  max-width: 550px;
+  align-items: center;
+}
+
+.input-uno {
+  background-color: #49565c72;
+  width: 500px;
+  height: 20px;
+  outline: none;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  padding: 5px;
+  padding-left: 15px;
+  border: #a2e0fa60 solid 2px;
+  color: aliceblue;
+}
+
+::placeholder { color: aliceblue; font-weight: bold; }
+
+.input-dos {
+  background: #3085A9;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0 20px 20px 0;
+  padding: 7px 15px 7px 15px;
+  margin-left: 15px;
+  color: aliceblue;
+  font-weight: bold;
+  border: #a2e0fa60 solid 2px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .center-nav {
+
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    margin: 0;
+  }
+
+  .container-searchBar {
+    margin: 0;
+    padding-top: 10px;
+    min-width: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .center-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .title {
+    margin: 0;
+  }
+
+  .container-searchBar {
+    margin: 0 20px;
+    padding-top: 10px;
+    min-width: 300px;
+  }
+}

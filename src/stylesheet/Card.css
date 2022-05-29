@@ -1,0 +1,77 @@
+.card {
+  background-color: rgba(12, 15, 25, 0.206);  
+  backdrop-filter: blur(8px);
+  width: 355px;
+  border-radius: 20px;
+  margin: 30.5px;
+  box-shadow:0 0 15px 3px hsl(0, 0%, 0%, 0.7);
+  color:rgb(240, 248, 255);
+  border: #a2e0fa60 solid 2px;
+  animation: rotate-scale-up-hor 0.65s linear both;
+}
+
+.btn-container { 
+  padding: 6px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(34, 68, 101, 0.129);
+  border-radius: 20px 20px 0 0;
+}
+
+.btn {
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  z-index: 1;
+  color: aliceblue;
+  font-weight: bold;
+  border: #a2e0fa60 solid 2px;
+}
+
+.btn:hover {
+  background-color: rgba(179, 246, 255, 0.421);
+  color: #fff;
+}
+
+.name-city {
+  margin: 1em;
+}
+
+.name-city h2 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.separator {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 10px 20px 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.text{
+  margin-bottom: 40px;
+}
+
+@keyframes rotate-scale-up-hor {
+  0% {
+    transform: scale(-.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  99% {
+    transform: scale(1);
+  }
+}
+
+
